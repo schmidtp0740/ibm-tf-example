@@ -4,15 +4,19 @@
 This is an example of a terraform template to download a IBM cluster configuration to the local directory
 
 # Prereqs
-- install terraform
-- install IBM cloud terraform provider
-- configure environment variables to set the ibm cloud api key
+- Install terraform
+- Install IBM cloud terraform provider
+- Configure the environment variable to set the ibm cloud api key
 ```
 $ export TF_VAR_ic_api_key="<ibm api key>"
 ```
 - Configure the environment variable to choose the cluster name to download the cluster config
 ```
 $ export TF_VAR_cluster_name="<ibm kubernetes cluster name>"
+```
+- Configure the environment variable to set the region that the cluster is in. To see available [cluster regions](https://containers.bluemix.net/v1/regions)
+```
+$ export TF_VAR_cluster_region="<cluster region name>
 ```
 
 # How to run
