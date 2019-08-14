@@ -14,7 +14,7 @@ $ export TF_VAR_ic_api_key="<ibm api key>"
 ```
 $ export TF_VAR_cluster_name="<ibm kubernetes cluster name>"
 ```
-- Configure the environment variable to set the region that the cluster is in. To see available [cluster regions](https://containers.bluemix.net/v1/regions)
+- Configure the environment variable to set the region that the cluster is in. Must be one of the available [cluster region names](https://containers.bluemix.net/v1/regions)
 ```
 $ export TF_VAR_cluster_region="<cluster region name>
 ```
